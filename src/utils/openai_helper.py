@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
+# reference: https://github.com/openai/openai-python
 def translate_prompt(prompt):
     client = OpenAI(
         api_key = os.getenv("OPENAI_API_KEY")
